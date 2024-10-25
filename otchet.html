@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap; /* Позволяет переносить строки */
+        }
+        .main-info {
+            margin-top: 100px;
+            line-height: 1.8;
+            text-align: center;
+        }
+        .main-info p {
+            font-family: "Times New Roman", serif;
+        }
+        .footer {
+            margin-top: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Титульный лист -->
+<div class="main-info">
+    <p>Лабораторная работа №2<br>
+    по Основы web-программирования<br>
+    Практическое задание: верстка </p>
+
+    <p style="text-align: left; margin-left: 200px; margin-top: 200px;">
+        Факультет: ФПМИ<br>
+        Группа: ПМИ-22<br>
+        Студент: Панарин И.С.<br>
+        Преподаватель: Цыгулин А.А.<br>
+    </p>
+</div>
+
+<div class="footer">
+    <p>Новосибирск 2024</p>
+</div>
+
+<!-- Основная часть документа -->
+<div class="container">
+
+    <h2>1) Цель</h2>
+    <p>Познакомиться со структурой HTML-документа, создать страничку со своей презентацией, проявить творческий подход.</p>
+
+    <h2>2) Ход работы</h2>
+    <p>Код работы:</p>
+    <pre>
+        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Панарин Илья - Пост-Панк Стиль&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('https://i.pinimg.com/originals/64/19/e4/6419e47b4a7630da834f80287a390c41.jpg');
+            background-size: cover;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff0066;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(20, 20, 20, 0.85);
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #ff0066;
+            text-transform: uppercase;
+        }
+        p {
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffcc00;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.8em;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header&gt;
+    Интересный факт - Делаю эту работу в последний день сдачи
+&lt;/header&gt;
+
+&lt;div class="container"&gt;
+    &lt;h1 style="display: flex;"&gt;Обо мне&lt;/h1&gt;
+    &lt;img style="float: right;" alt="" width="100px" height="100px" src="./photo.jpg"/&gt;
+    &lt;p&gt;Меня зовут &lt;span class="highlight"&gt;Панарин Илья&lt;/span&gt;. Живу в &lt;span class="highlight"&gt;Новосибирске&lt;/span&gt; — городе, где лед и мрак сливаются в единое целое.&lt;/p&gt;
+    &lt;p&gt;Не особо люблю фронтенд, но люблю бекенд, так для меня он легче.&lt;/p&gt;
+    
+    &lt;h2&gt;Образование&lt;/h2&gt;
+    &lt;p&gt;Учусь в &lt;span class="highlight"&gt;НГТУ&lt;/span&gt; на направлении &lt;span class="highlight"&gt;прикладная математика и информатика&lt;/span&gt;. Мир чисел и алгоритмов — это бесконечный поток, который затягивает и не отпускает.&lt;/p&gt;
+    
+    &lt;h2&gt;Интересы&lt;/h2&gt;
+    &lt;p&gt;Временами порешиваю литкод, но денег мне за алгоритмы никто не платит, а платят - за постоянное таскание JSONчиков&lt;/p&gt;
+    &lt;div style="display: flex; align-items: center;"&gt;
+        &lt;div style="padding-right: 2%;"&gt;
+            &lt;p&gt;Гитхаб&lt;/p&gt;
+            &lt;a href="https://github.com/devochkazaika" target="_blank"&gt;
+                &lt;img style="width: 70px; height: 70px;" src="https://steamuserimages-a.akamaihd.net/ugc/1763693544760073122/3138F68A4243EDFF39AFDC32E6CEDFDF64CDB159/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Описание картинки"&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div&gt;   
+            &lt;p&gt;ВК&lt;/p&gt;
+            &lt;a href="https://vk.com/ne_nado_meny_zvat" target="_blank"&gt;
+                &lt;img style="width: 70px; height: 70px;" src="https://i.pinimg.com/736x/d3/00/5c/d3005c63552de4875a78eef57307a77c.jpg" alt="Описание картинки"&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+    © 2024 Панарин Илья. Холод и дикие рофлы.
+&lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+    </pre>
+    <h2>3) Вид Страницы</h2>
+    <img src="./image.png">
+    <h2>4) Вывод</h2>
+    <p>В ходе данной работы было изучена верстка со структурой HTML-документа, создана страничка со своей презентацией.</p>
+</div>
+
+</body>
+</html>
